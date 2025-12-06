@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy-Paste Helper</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <div class="theme-toggle" id="themeToggle">
+        <i class="ri-sun-line" id="lightIcon"></i>
+        <i class="ri-moon-line" id="darkIcon"></i>
+    </div>
+
+    <div class="container">
+        <h2> Glow Copy-Paste Helper</h2>
+
+        <textarea id="textBox" placeholder="Type something here..."></textarea>
+
+        <div class="btn-group">
+            <button id="copyBtn"><i class="ri-file-copy-line"></i> Copy</button>
+            <button id="pasteBtn"><i class="ri-clipboard-line"></i> Paste</button>
+        </div>
+
+        <p id="status"></p>
+    </div>
+
+    
+    <audio id="copySound" src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3"></audio>
+    <audio id="pasteSound" src="https://assets.mixkit.co/active_storage/sfx/2013/2013-preview.mp3"></audio>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
